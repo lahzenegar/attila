@@ -7,10 +7,10 @@
 			<li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
 			{{/foreach}}
 			{{#if @blog.twitter}}
-			<li class="nav-twitter"><a href="{{twitter_url}}" title="{{@blog.twitter}}"><i class="ic ic-twitter"></i> Twitter</a></li>
+			<li class="nav-twitter"><a href="{{twitter_url}}" title="{{@blog.twitter}}"><i class="ic ic-twitter"></i> {{t "Twitter"}}</a></li>
 			{{/if}}
 			{{#if @blog.facebook}}
-			<li class="nav-facebook"><a href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="ic ic-facebook"></i> Facebook</a></li>
+			<li class="nav-facebook"><a href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="ic ic-facebook"></i> {{t "Facebook"}}</a></li>
 			{{/if}}
 			{{#if @labs.subscribers}}
 			<li class="nav-subscribe"><a href="{{@blog.url}}/subscribe/"><i class="ic ic-mail"></i> {{t "Subscribe"}}</a></li>
